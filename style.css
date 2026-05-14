@@ -1,0 +1,182 @@
+header {
+    text-align: center;
+    padding: 35px;
+}
+
+body {
+    background-color: #eef2f7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.banner-flex{
+    min-height: 80vh;
+}
+
+h1{
+    color:#5b21b6;
+    text-align:center;
+    font-size:60px;
+    margin-bottom:10px;
+    animation: aparecer 1s ease;
+}
+
+h2{
+    color:#1e293b;
+    margin-bottom:15px;
+    animation: aparecer 1s ease;
+}
+
+
+nav {
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+
+nav a:hover{
+    color: violet;
+    font-size:16px;
+    
+
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+
+p{
+    color:#334155;
+    line-height:1.7;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.contenedor-flex{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:20px;
+}
+
+
+.tarjeta{
+    background-color: white;
+    padding:15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align:center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    align-items:stretch;
+    transition: 0.3s ease;
+    animation: aparecer 1s ease;
+}
+.tarjeta img {
+    width: 100%;
+    border-radius: 10px;
+   }
+
+.tarjeta img:hover{
+    transform:scale(1.05);
+}
+
+.tarjeta:hover{
+    transform: translateY(-10px) scale(1.02);
+
+}
+
+
+button{
+    background-color:#7c052d;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background-color:#5b21b6;
+    transform:scale(1.05);
+    box-shadow: 0px 5px 15px rgba(124,58,237,0.4);
+}
+
+
+@media (max-width: 500px) {
+    
+    .contenedor-flex{
+        flex-direction:column;
+        align-items:center;
+        
+    }
+
+nav{
+    border-radius:10px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+h1{
+    font-size:35px;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+}
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
